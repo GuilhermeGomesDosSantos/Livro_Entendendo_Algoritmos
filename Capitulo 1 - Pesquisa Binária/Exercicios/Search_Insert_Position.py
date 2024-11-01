@@ -14,10 +14,10 @@ def searchInsert(lista, alvo):
             return mid
 
         elif alvo < lista[mid]:
-            valor_maior_lista -= 1
+            valor_maior_lista = mid - 1
 
         elif alvo > lista[mid]:
-            valor_menor_lista += 1
+            valor_menor_lista = mid + 1
         
     return valor_menor_lista
 
